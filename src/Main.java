@@ -25,8 +25,10 @@ public class Main {
             arrayList.add((int) (Math.random() * Integer.MAX_VALUE));
         }
 
-        // Removing elements
-        arrayList.clear();
+        // Removing elements individually
+        for (int i = 0; i < arrayList.size(); i++) {
+            arrayList.remove(i);
+        }
     }
 
     private static void linkedListPerformanceMeasure() {
@@ -36,7 +38,9 @@ public class Main {
             linkedList.add((int) (Math.random() * Integer.MAX_VALUE));
         }
 
-        linkedList.clear();
+        for (int i = 0; i < linkedList.size(); i++) {
+            linkedList.remove(i);
+        }
     }
 
     private static void hashtablePerformanceMeasure() {
@@ -46,6 +50,8 @@ public class Main {
             hashtable.put(i, (int) (Math.random() * Integer.MAX_VALUE));
         }
 
-        hashtable.clear();
+        for (int i = 0; i < hashtable.size(); i++) {
+            hashtable.remove(i);
+        }
     }
 }
